@@ -40,7 +40,7 @@ object build extends Build {
     organization := "org.specs2",
     specs2Version in GlobalScope <<= version,
     scalaVersion := "2.10.2",
-    addCompilerPlugin("org.scala-lang.plugins" % "macro-paradise_2.10.3-RC1" % "2.0.0-SNAPSHOT")
+    addCompilerPlugin("org.scalamacros" % "paradise_2.10.2" % "2.0.0")
   )
 
   lazy val compilationSettings: Seq[Settings] = Seq(
